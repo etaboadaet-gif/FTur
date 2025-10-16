@@ -414,6 +414,14 @@ video{
 .texto-chef, .imagen-chef{
     flex: 0 0 calc(50% - 1rem);
 }
+.imagen-mapa img {
+    width: 10%;
+    max-width: 350px;
+    height: auto;
+    border-radius: 10px;
+    display: block;
+    margin: 2rem auto;
+}
 .texto-chef h3{
     font-size: 3rem;
 
@@ -543,4 +551,20 @@ video{
     color: var(--blanco);
     padding: 2rem;
     font-size: 2rem;
+}
+/* Corrección de tamaños en las imágenes de destinos */
+.platillos img {
+  width: 100%;
+  height: 250px; /* probá 200, 300 o lo que se vea mejor */
+  object-fit: cover;
+  border-radius: 10px;
+}
+/* Forzar tamaño más chico para la imagen del mapa */
+.imagen-chef img {
+    width: 60% !important;       /* fuerza el tamaño a 60% del contenedor */
+    max-width: 280px !important; /* límite absoluto */
+    height: auto !important;
+    display: block;
+    margin: 2rem auto;
+    border-radius: 10px;
 }
