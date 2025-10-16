@@ -16,18 +16,19 @@
 </head>
 
 <body>
-    <header class="encabezado">
-        <div class="contenedor-navegacion">
+    <header class="encabezado" id="incio">
+        <div class="contenedor-navegacion"> 
             <div class="contenido-navegacion contenedor">
                 <div class="logo">
                     <h2>Fede<span class="verde">Tour</span> <span>Agencia</span> <span class="rojo">de Turismo</span></h2>
                 </div>
                 <nav class="navegacion ocultar">
-                    <a href="#">Inicio</a>
-                    <a href="#">Nosotros</a>
-                    <a href="#">Destinos</a>
-                    <a href="#">Promociones</a>
-                    <a href="#">Contacto</a>
+                    <a href="#incio">Inicio</a>
+                    <a href="#nosotros">Nosotros</a>
+                    <a href="#destinos">Destinos</a>
+                    <a href="#equipo">Equipo</a>
+                    <a href="#promociones">Promociones</a>
+                    <a href="#contacto">Contacto</a>
                 </nav>
                 <div class="hamburguesa">
                     <span></span><span></span><span></span>
@@ -38,13 +39,13 @@
             <div class="contenedor-encabezado">
                 <div class="texto-encabezado">
                     <h2>Descubrí nuevos paisajes</h2>
-                    <a href="#" class="btn bordes">Ver destinos</a>
+                    <a href="#Destinos" class="btn bordes">Ver destinos</a>
                 </div>
                 <div class="contenido-header" style="background-image: url('assets/img/Capadocia.jpg'); background-size: cover; background-position: center; height: 100vh;">
   <div class="contenedor-encabezado">
     <div class="texto-encabezado">
       <h2>Descubrí nuevos paisajes</h2>
-      <a href="#" class="btn bordes">Ver destinos</a>
+      <a href="#destinos" class="btn bordes">Ver destinos</a>
     </div>
   </div>
 </div>
@@ -55,15 +56,15 @@
         </div>
     </header>
 
-    <div class="contenedor-nosotros contenedor">
+    <div class="contenedor-nosotros contenedor" id="nosotros">
         <div class="texto-nosotros">
-            <p class="bienvenida">Bienvenido a</p>
+            <p class="bienvenida">Bienvenidos a</p>
             <h1>FedeTour</h1>
             <p>En FedeTour nos apasiona crear experiencias únicas. Somos una agencia de turismo dedicada a conectar a las personas con los paisajes más hermosos del mundo.  
                 Ya sea una escapada de fin de semana o unas vacaciones soñadas, te ayudamos a planificar cada detalle para que solo tengas que disfrutar.  
                 Viajá tranquilo, viajá con FedeTour.
           </p>
-<a href="#" class="btn btn-rojo">Contactar</a>
+<a href="#contacto" class="btn btn-rojo">Contactar</a>
 </div>
 
 <div class="imagenes-nosotros">
@@ -78,7 +79,7 @@
 </div>
 
 
-    <section class="menu contenedor">
+    <section class="menu contenedor" id="destinos">
         <h2 class="texto-platillos">Destinos populares</h2>
         <div class="botones-platillos">
             <button class="todos btn btn-verde">Todos</button>
@@ -172,15 +173,15 @@
         </div>
     </section>
 
-    <div class="separador">
+<div class="separador" id="promociones">
         <div class="contenido-separador contenedor">
             <h2>Viví experiencias únicas</h2>
             <p>Tu próxima aventura comienza con FedeTour</p>
-            <a href="#" class="btn btn-verde">Consultar paquetes</a>
+            <a href="#promciones" class="btn btn-verde">Consultar paquetes</a>
         </div>
     </div>
 
-    <section class="chef contenedor">
+    <section class="chef contenedor" id="equipo">
         <h2>Nuestro equipo</h2>
         <div class="contenido-chef">
             <div class="texto-chef">
@@ -209,7 +210,7 @@
             </div>
         </div>
 
-        <form class="formulario">
+        <form class="formulario" id="contacto">
             <div class="input-formulario">
                 <label for="nombre">Nombre</label>
                 <input type="text" placeholder="Pedro" id="nombre">
